@@ -53,29 +53,28 @@
             gap: 20px;
         }
         .model {
-            width: 80%;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align:center;
-
-        }
-        .model img {
-            width: 100%;
-            height: auto;
-        } 
+            width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease; /* Плавний перехід */
+    position: relative;
+}
         .content {
             padding: 20px;
             max-width: 800px;
             margin: 0 auto;
+            justify-content: center;
         }
         .content p {
             font-size: 1em;
             line-height: 1.6;
             color: #555;
         } 
-                .model img {
+            .model img {
             width: 100%;
             height: auto;
         }
@@ -89,11 +88,11 @@
             padding: 0 10px 10px;
             color: #666;
         }
-        .models:hover{
+        .model:hover{
             transition: 0.7s;
-            box-shadow: 0 7px 11px rgba(0, 0, 0, 0.5);
-            
-        }
+        transform: translateX(50px) scale(1.1); 
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); 
+}           
         #contact{
             background-color:#154360;
             color:white;
@@ -132,24 +131,22 @@
     </section>
     <section id="models">
         <h2>Популярні моделі Subaru</h2>
-        <lu>
         <div class="model">
             <img src="https://cdn-image-handler.oem-production.subaru.com.au/vehicle/2024/forester/specs-pack/for24-2.5i-p-front-crystalwhitepearl.png">
-            <li><strong><h1>Subaru Forester</h1></strong> <p>кросовер для любителів пригод.</p></li>
+            <strong><h1>Subaru Forester</h1></strong> <p>кросовер для любителів пригод.</p>
         </div>    
           <div class="model">
             <img src="https://cdn-image-handler.oem-production.subaru.com.au/vehicle/2024/outback/my24-outback-awd-crystalwhitepearl-front.png"> 
-            <li><strong><h2>Subaru Outback</h2></strong> <p>універсал з високим рівнем прохідності.</p></li>
+            <strong><h2>Subaru Outback</h2></strong> <p>універсал з високим рівнем прохідності.</p>
           </div>
           <div class="model">
             <img src="https://www.pngitem.com/pimgs/m/574-5745554_subaru-impreza-wrx-sti-2019-hd-png-download.png"> 
-            <li><strong><h3>Subaru Impreza WRX STI</h3></strong> <p>компактний автомобіль з витонченим дизайном.</p></li>
+            <strong><h3>Subaru Impreza WRX STI</h3></strong> <p>компактний автомобіль з витонченим дизайном.</p>
           </div>
           <div class="model">
             <img src="https://pro.bbcdn.io/f4/f40a1f00-4753-4546-bad0-8126d63d5caf?rule=news-large"> 
-            <li><strong><h4>Subaru XV</h4></strong><p>автомобіль для активного способу життя.</p></li>
+            <strong><h4>Subaru XV</h4></strong><p>автомобіль для активного способу життя.</p>
           </div>
-        </lu>
         </section>
     <section id="contact">
         <h5>Контакти</h5>
